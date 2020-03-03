@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
       films.classList.add('card__films');
 
       card.innerHTML = `<div class="card__icon">
-        <!--<img src="${item['photo']}" alt="">-->
+        <img src="${item['photo']}" alt="">
       </div>
       <h3 class="card__hero-name">${item['name']}</h3>
       <h4 class="card__name">${item['actors']}</h4>
@@ -49,9 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
               return item;
             }
           });
-          console.log(data);
         }
-
         addCards(data);
       }
     });
