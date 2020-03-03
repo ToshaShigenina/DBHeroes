@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  color: #424242;
+  line-height: 1.1;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: calc((100vw - 320px)/(1200 - 320) * (80 - 40) + 40px);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  padding: 2rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card__icon {
+  width: 50%;
+}
+
+.card__icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__hero-name {
+  font-size: calc((100vw - 320px)/(1200 - 320) * (40 - 32) + 30px);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card__name {
+  font-size: calc((100vw - 320px)/(1200 - 320) * (30 - 24) + 22px);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card__films {
+  list-style-type: none;
+}
+
+.card__films li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.card__films li::before {
+  content: '-';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+}
+
+.card__films li + li {
+  margin-top: .2rem;
+}
