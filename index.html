@@ -12,34 +12,21 @@
 
   <h1 class="heading">DB Heroes</h1>
 
-  <section class="grid">
-    <div class="card">
-      <div class="card__icon">
-        <img src="" alt="">
-      </div>
-      <h3 class="card__hero-name">Супермен</h3>
-      <h4 class="card__name">Кларк Кент</h4>
-      <ul class="card__films">
-        <li>Человек из стали</li>
-        <li>Бэтмен против супермена</li>
-        <li>Лига справедливости</li>
-      </ul>
-      <div class="card__status"></div>
-    </div>
+  <div class="grid">
+    <input type="radio" name="filter" id="all" value="all" checked>
+    <label for="all">all heroes</label>
 
-    <div class="card">
-      <div class="card__icon">
-        <img src="" alt="">
-      </div>
-      <h3 class="card__hero-name">Супермен</h3>
-      <h4 class="card__name">Кларк Кент</h4>
-      <ul class="card__films">
-        <li>Человек из стали</li>
-        <li>Бэтмен против супермена</li>
-        <li>Лига справедливости</li>
-      </ul>
-      <div class="card__status"></div>
-    </div>
+    <input type="radio" name="filter" id="status" value="alive">
+    <label for="status">alive</label>
+
+    <input type="radio" name="filter" id="species" value="human">
+    <label for="species">human</label>
+
+    <input type="radio" name="filter" id="genger" value="female">
+    <label for="genger">female</label>
+  </div>
+
+  <section class="grid" id="content">
   </section>
 
 

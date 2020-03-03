@@ -30,6 +30,30 @@ body {
   grid-gap: 1rem;
 }
 
+input {
+  display: none;
+}
+
+label {
+  text-align: center;
+  padding: .5rem;
+  border-radius: .6rem;
+  background-color: #eee;
+  font-size: 80%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+label:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+input:checked + label {
+  background-color: #1976d2;
+  color: #fff;
+}
+
 .card {
   padding: 2rem 1rem;
   border: 1px solid #ccc;
@@ -49,9 +73,10 @@ body {
 
 .card__icon {
   width: 50%;
+  margin: auto;
 }
 
-.card__icon {
+.card__icon img {
   display: block;
   width: 100%;
   height: auto;
@@ -67,6 +92,12 @@ body {
   font-size: calc((100vw - 320px)/(1200 - 320) * (30 - 24) + 22px);
   text-align: center;
   margin: 1rem 0;
+}
+
+.card__status {
+  color: #aaa;
+  text-align: center;
+  margin: .5rem 0;
 }
 
 .card__films {
